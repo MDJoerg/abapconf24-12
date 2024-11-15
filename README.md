@@ -14,4 +14,4 @@ Für aktuelle Informationen schaut bitte auf der [Eventseite]((https://abapconf.
   
   
 ---
-letzte Ändeung: 15.11.2024
+letzte Änderung: 15.11.2024

@@ -1,0 +1,71 @@
+# Demo to get information from Graph Universe via REST API
+
+## Set Parameters
+
+@endpoint = {{guv_endpoint}}
+@universe = ATG1
+@object_type = ACWorkcenter
+@object_key = 1000
+
+
+
+## Object Types and Objects
+
+### Create object type
+POST  {{endpoint}}/object_type/{{universe}}
+Content-Type: application/json
+
+{
+  "alias": "",
+  "category": "",
+  "description": "Wurde generiert über die REST Client Demos {{$datetime rfc1123}}",
+  "embedding_model": "",
+  "embedding_type": "",
+  "group_key": "",
+  "image_url": "",
+  "is_auto_create": false,
+  "is_auto_created": false,
+  "is_auto_embed": false,
+  "is_auto_tag": false,
+  "is_auto_translate": false,
+  "is_disabled": false,
+  "is_key_non_unique": false,
+  "is_no_navigation": false,
+  "is_private": false,
+  "is_proxy": false,
+  "is_public": false,
+  "is_secured": false,
+  "is_template": false,
+  "is_user_content": false,
+  "is_virtual": false,
+  "key": "{{object_key}}",
+  "layer": "",
+  "link_url": "",
+  "namespace": "",
+  "owner": "",
+  "payload": "",
+  "payload_type": "",
+  "plugin_name": "",
+  "plugin_options": "",
+  "proxy_key": "",
+  "ref_source": "",
+  "ref_type": "",
+  "reference": "",
+  "responsible": "",
+  "sort_order": 0,
+  "status": "",
+  "sync_type": "",
+  "tags": "",
+  "title": "{{object_type}} {{object_key}}",
+  "title_multiple": "",
+  "universe_uuid": "",
+  "value_default": 0,
+  "value_option": "",
+  "value_unit": "",
+  "viewer": ""
+}
+
+### Get given universe types
+GET {{endpoint}}/universe/{{universe}}
+
+

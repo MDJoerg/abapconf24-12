@@ -1,0 +1,60 @@
+# Demo to get information from Graph Universe via REST API
+
+## Set Parameters
+
+@endpoint = {{guv_endpoint}}
+@universe = ATG1
+@object_type = Person
+@object_key = 0000000002
+
+
+
+## Get an overview 
+
+### Get available Universes
+GET  {{endpoint}}/universe
+
+
+### Get given universe types
+GET {{endpoint}}/universe/{{universe}}
+
+
+
+
+## Get configured type
+
+### Get object types in universe
+GET {{endpoint}}/object_type/{{universe}}
+
+### Get relation types in universe
+GET {{endpoint}}/relation_type/{{universe}}
+
+
+### Get attribute types in universe
+GET {{endpoint}}/attribute_type/{{universe}}
+
+### Get activity types in universe
+GET {{endpoint}}/activity_type/{{universe}}
+
+
+
+
+## Get Details
+
+### Get objects
+GET {{endpoint}}/object/{{universe}}/{{object_type}}
+
+### Get object
+GET {{endpoint}}/object/{{universe}}/key/{{object_type}}/{{object_key}}
+
+
+### Get object relations
+GET {{endpoint}}/relations/{{universe}}/for/object/key/{{object_type}}/{{object_key}}
+
+
+### Get object attributes
+GET {{endpoint}}/attributes/{{universe}}/for/object/key/{{object_type}}/{{object_key}}
+
+### Get object activities
+GET {{endpoint}}/activities/{{universe}}/for/object/key/{{object_type}}/{{object_key}}
+
