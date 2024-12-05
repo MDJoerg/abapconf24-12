@@ -8,8 +8,8 @@ Für aktuelle Informationen schaut bitte auf der [Eventseite]((https://abapconf.
 ## Inhalt:
 
 - Vortrag
-- HTTP API Demos
-- Jupyter Notebook Demos
+- [Jupyter Notebook Demos](notebooks)
+- [HTTP API Demos](http/README.md)
 - Grafiken
   
   
