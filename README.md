@@ -7,11 +7,10 @@ Für aktuelle Informationen schaut bitte auf der [Eventseite]((https://abapconf.
 
 ## Inhalt:
 
-- Vortrag
+- [Vortrag](slides/ABAPConf_ABAP_Hybrid_Die_Magie_von_Graph_Datenmodellen_V1.pdf)
 - [Jupyter Notebook Demos](notebooks)
 - [HTTP API Demos](http/README.md)
-- Grafiken
   
   
 ---
-letzte Änderung: 15.11.2024
+letzte Änderung: 05.12.2024
